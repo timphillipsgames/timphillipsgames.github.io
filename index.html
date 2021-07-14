@@ -1,1 +1,167 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+  
+.header1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: black;
+  font-size: 60px;
+  padding-top: 4vw;
+}
+.header2 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  padding-bottom: 5vw;
+}
+.grid {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }@media (max-width: 700px) {
+  .grid {
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+.grid-item {
+  width: 25vw;
+  object-fit:scale-down;
+  height:100%;
+
+}@media (max-width: 700px) {
+  .grid-item {
+    width: 75vw;
+  }
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 100%;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffffd3;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.name{
+ text-align: center;
+ font-family: 'Raleway', sans-serif;
+ font-size: 25px;
+}
+
+.link{
+  text-decoration: none;
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="header1">Tim Phillips</div>
+<div class="header2">Game and experience design</div>
+
+<div class = "grid">
+
+  <div class="container">
+    <div>
+      <a href = "Page2.html" class="link">
+        <img class = "grid-item" src="assets/i.jpg" alt="Innovate!" class="image">
+        <div class = "name" >Innovate!</div>
+        <div class="overlay">
+          <div class="text">Innovate!</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <a href = "Page2.html" class="link">
+        <img class = "grid-item" src="assets/cr2.png" alt="CorbynRun" class="image">
+        <div class = "name" >CorbynRun 2</div>
+        <div class="overlay">
+          <div class="text">CorbynRun 2</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <div>
+      <a href = "Page2.html" class="link">
+        <img class = "grid-item" src="assets/ig.jpg" alt="Invisible Garden" class="image">
+        <div class = "name" >Invisible Garden</div>
+        <div class="overlay">
+          <div class="text">Invisible Garden</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <a href = "Page2.html" class="link">
+        <img class = "grid-item" src="assets/cr.png" alt="CorbynRun" class="image">
+        <div class = "name" >CorbynRun</div>
+        <div class="overlay">
+          <div class="text">CorbynRun</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <a href = "Page2.html" class="link">
+        <img class = "grid-item" src="assets/os.png" alt="Open Sky" class="image">
+        <div class = "name" >Open Sky</div>
+        <div class="overlay">
+          <div class="text">Open Sky</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  
+
+</div>
+
+
+</body>
+</html>
