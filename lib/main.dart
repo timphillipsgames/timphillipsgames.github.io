@@ -40,47 +40,49 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
+            color: Colors.blue,
             margin: EdgeInsets.only(
-              left: MediaQuery.of(context).size.width / 50,
-              right: (MediaQuery.of(context).size.width / 50),
+              top: MediaQuery.of(context).size.width / 50,
+              left: MediaQuery.of(context).size.width / 10,
+              right: (MediaQuery.of(context).size.width / 10),
             ),
-            child: GridView.count(
-              crossAxisCount: 3,
-              mainAxisSpacing: 0,
-              crossAxisSpacing: 0, //MediaQuery.of(context).size.width / 4,
-              shrinkWrap: true,
+            child: ListView(
               children: [
-                ImageButton('images/b.jpg', 'A picture of a wheel'),
-                ImageButton('images/cr.png', 'A picture of a wheel'),
-                ImageButton('images/cr2.png', 'A picture of a wheel'),
-                ImageButton('images/i.jpg', 'A picture of a wheel'),
-                ImageButton('images/ig.jpg', 'A picture of a wheel'),
-                ImageButton('images/os.png', 'A picture of a wheel'),
-                //ImageButton('images/b.jpg', 'A picture of a wheel'),
-                //ImageButton('images/b.jpg', 'A picture of a wheel'),
-                //ImageButton('images/b.jpg', 'A picture of a wheel'),
-                /*
-        Image(
-          image: NetworkImage(
-              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-        ),
-        Image(
-          image: NetworkImage(
-              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-        ),
-        Image(
-          image: NetworkImage(
-              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-        ),
-        Image(
-          image: NetworkImage(
-              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-        ),
-        Image(
-          image: NetworkImage(
-              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
-        )
-        */
+                Container(
+                    alignment: Alignment.center,
+                    child:
+                        Text('Tim Phillips', style: TextStyle(fontSize: 25))),
+                Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'Game and Experience Design',
+                      style: TextStyle(fontSize: 25),
+                    )),
+                Container(
+                    color: Colors.amber,
+                    //margin: EdgeInsets.only(
+                    //left: MediaQuery.of(context).size.width / 50,
+                    //right: (MediaQuery.of(context).size.width / 50)),
+                    child: GridView.count(
+                      crossAxisCount: 3,
+                      childAspectRatio: 1.4,
+                      //mainAxisSpacing: 50,
+                      crossAxisSpacing: MediaQuery.of(context).size.width / 40,
+                      shrinkWrap: true,
+                      children: [
+                        ImageButton('images/bude.png', 'A picture of a wheel'),
+                        ImageButton(
+                            'images/stagnes.png', 'A picture of a wheel'),
+                        ImageButton(
+                            'images/kerdroya.png', 'A picture of a wheel'),
+                        ImageButton(
+                            'images/scilly.png', 'A picture of a wheel'),
+                        ImageButton('images/cr2.png', 'A picture of a wheel'),
+                        ImageButton('images/i.jpg', 'A picture of a wheel'),
+                        ImageButton('images/cr.png', 'A picture of a wheel'),
+                        ImageButton('images/ig.jpg', 'A picture of a wheel'),
+                      ],
+                    ))
               ],
             ))
 
