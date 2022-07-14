@@ -1,17 +1,25 @@
 import 'package:flutter/material.dart';
 
 class ImageButton extends StatelessWidget {
-  const ImageButton({Key? key}) : super(key: key);
+  final String path;
+  final String caption;
+  const ImageButton(this.path, this.caption);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        color: Colors.red,
-        child: Column(
-          children: [
-            Expanded(child: Image.asset('images/b.jpg')),
-            Text('title'),
-          ],
-        ));
+    return InkWell(
+        child: Image.asset(path),
+        onTap: () {
+          Navigator.pushNamed(context, '/bude');
+        });
   }
 }
+
+/*
+        GestureDetector(
+            child: Image.asset(path),
+            onTap: () {
+              Navigator.pushNamed(context, '/bude');
+            }
+            ),
+*/

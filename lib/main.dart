@@ -3,6 +3,7 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'widgets/imageButton.dart';
 import 'widgets/imageButton2.dart';
+import 'bude.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,21 +16,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.green,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.green,
+        ),
+        home: const MyHomePage(title: 'Flutter Demo Home Page'),
+        routes: <String, WidgetBuilder>{
+          Bude.routeName: (context) => Bude(),
+        });
   }
 }
 
@@ -46,45 +40,69 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
+            margin: EdgeInsets.only(
+              left: MediaQuery.of(context).size.width / 50,
+              right: (MediaQuery.of(context).size.width / 50),
+            ),
+            child: GridView.count(
+              crossAxisCount: 3,
+              mainAxisSpacing: 0,
+              crossAxisSpacing: 0, //MediaQuery.of(context).size.width / 4,
+              shrinkWrap: true,
+              children: [
+                ImageButton('images/b.jpg', 'A picture of a wheel'),
+                ImageButton('images/cr.png', 'A picture of a wheel'),
+                ImageButton('images/cr2.png', 'A picture of a wheel'),
+                ImageButton('images/i.jpg', 'A picture of a wheel'),
+                ImageButton('images/ig.jpg', 'A picture of a wheel'),
+                ImageButton('images/os.png', 'A picture of a wheel'),
+                //ImageButton('images/b.jpg', 'A picture of a wheel'),
+                //ImageButton('images/b.jpg', 'A picture of a wheel'),
+                //ImageButton('images/b.jpg', 'A picture of a wheel'),
+                /*
+        Image(
+          image: NetworkImage(
+              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+        ),
+        Image(
+          image: NetworkImage(
+              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+        ),
+        Image(
+          image: NetworkImage(
+              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+        ),
+        Image(
+          image: NetworkImage(
+              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+        ),
+        Image(
+          image: NetworkImage(
+              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
+        )
+        */
+              ],
+            ))
+
+        /*
+        Container(
       color: Colors.blue,
-      margin: EdgeInsets.all(MediaQuery.of(context).size.width / 10),
+      //margin: EdgeInsets.only(
+      //left: MediaQuery.of(context).size.width / 10,
+      //right: (MediaQuery.of(context).size.width / 10),
+      //  ),
       child: ListView(
         children: [
-          Container(alignment: Alignment.center, child: Text('Tim Phillips')),
-          Container(
-              color: Colors.orange,
-              alignment: Alignment.center,
-              child: Text('Game and Experience Design')),
-          GridView.count(
-            crossAxisCount: 3,
-            mainAxisSpacing: MediaQuery.of(context).size.width / 50,
-            crossAxisSpacing: MediaQuery.of(context).size.width / 50,
-            shrinkWrap: true,
-            children: [
-              Image.asset('images/b.jpg'),
-              ImageButton(),
-              //ImageButton2(),
-              Image(image: NetworkImage('https://i.imgur.com/FnBv6Jk.jpeg')),
-              Image(
-                  image: NetworkImage(
-                      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg')),
-              Image(
-                  image: NetworkImage(
-                      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg')),
-              Image(
-                  image: NetworkImage(
-                      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg')),
-              Image(
-                  image: NetworkImage(
-                      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg')),
-              Image(
-                  image: NetworkImage(
-                      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg')),
-            ],
-          )
+          //Container(alignment: Alignment.center, child: Text('Tim Phillips')),
+          //Container(
+          // color: Colors.orange,
+          //alignment: Alignment.center,
+          //child: Text('Game and Experience Design')),
+          
         ],
       ),
     )
+    */
 
         /*ListView(children: [
       Container(
