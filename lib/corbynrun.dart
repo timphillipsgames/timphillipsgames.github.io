@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Bude extends StatelessWidget {
-  static const String routeName = '/bude';
-  const Bude({Key? key}) : super(key: key);
+class Corbynrun extends StatelessWidget {
+  static const String routeName = '/corbynrun';
+  const Corbynrun({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,13 +17,13 @@ class Bude extends StatelessWidget {
                 left: MediaQuery.of(context).size.width / 7,
                 right: MediaQuery.of(context).size.width / 7),
             child: Image.asset(
-              'images/bude2.png',
+              'images/cr.png',
               fit: BoxFit.fitWidth,
             )),
         Container(
           margin: EdgeInsets.only(
               top: 40, bottom: 40, left: MediaQuery.of(context).size.width / 5),
-          child: Text('Captaining the Ceres',
+          child: Text('CorbynRun',
               style: TextStyle(fontFamily: 'Roboto', fontSize: 40)),
           //alignment: Alignment.center,
         ),

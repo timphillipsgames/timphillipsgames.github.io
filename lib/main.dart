@@ -2,8 +2,14 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'widgets/imageButton.dart';
-import 'widgets/imageButton2.dart';
 import 'bude.dart';
+import 'corbynrun.dart';
+import 'corbynrun2.dart';
+import 'invisiblegarden.dart';
+import 'kerdroya.dart';
+import 'scilly.dart';
+import 'stagnes.dart';
+import 'innovate.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,13 +22,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Tim Phillips Game and Experience Design',
         theme: ThemeData(
-          primarySwatch: Colors.green,
-        ),
-        home: const MyHomePage(title: 'Flutter Demo Home Page'),
+            //primarySwatch: Colors.green,
+            ),
+        home:
+            const MyHomePage(title: 'Tim Phillips Game and Experience Design'),
         routes: <String, WidgetBuilder>{
           Bude.routeName: (context) => Bude(),
+          Corbynrun.routeName: (context) => Corbynrun(),
+          Corbynrun2.routeName: (context) => Corbynrun2(),
+          Invisiblegarden.routeName: (context) => Invisiblegarden(),
+          Scilly.routeName: (context) => Scilly(),
+          Stagnes.routeName: (context) => Stagnes(),
+          Kerdroya.routeName: (context) => Kerdroya(),
+          Innovate.routeName: (context) => Innovate(),
         });
   }
 }
@@ -40,29 +54,52 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-            color: Colors.blue,
+            color: Colors.black,
             margin: EdgeInsets.only(
-              top: MediaQuery.of(context).size.width / 50,
-              left: MediaQuery.of(context).size.width / 10,
-              right: (MediaQuery.of(context).size.width / 10),
-            ),
+                //top: 70,
+                //left: MediaQuery.of(context).size.width / 10,
+                //right: (MediaQuery.of(context).size.width / 10),
+                ),
             child: ListView(
               children: [
                 Container(
-                    alignment: Alignment.center,
-                    child:
-                        Text('Tim Phillips', style: TextStyle(fontSize: 25))),
+                    color: Colors.white,
+                    child: Column(children: [
+                      Container(
+                          margin: EdgeInsets.only(top: 70),
+                          alignment: Alignment.center,
+                          child: Text('Tim Phillips',
+                              style: TextStyle(
+                                fontFamily: 'Roboto',
+                                fontSize: 60,
+                              ))),
+                      Container(
+                          margin: EdgeInsets.only(bottom: 40),
+                          alignment: Alignment.center,
+                          child: Text(
+                            'Game and Experience Design',
+                            style:
+                                TextStyle(fontFamily: 'Raleway', fontSize: 40),
+                          )),
+                    ])),
                 Container(
-                    alignment: Alignment.center,
+                    margin: EdgeInsets.only(
+                        top: 160,
+                        bottom: 140,
+                        left: MediaQuery.of(context).size.width / 10),
                     child: Text(
-                      'Game and Experience Design',
-                      style: TextStyle(fontSize: 25),
+                      "Hi there, I'm Tim Phillips. I'm a lecturer at Falmouth University ",
+                      style: TextStyle(
+                          fontFamily: 'Raleway',
+                          fontSize: 25,
+                          color: Colors.white),
                     )),
                 Container(
-                    color: Colors.amber,
-                    //margin: EdgeInsets.only(
-                    //left: MediaQuery.of(context).size.width / 50,
-                    //right: (MediaQuery.of(context).size.width / 50)),
+                    color: Colors.black,
+                    margin: EdgeInsets.only(
+                        //top: 40,
+                        left: MediaQuery.of(context).size.width / 10,
+                        right: (MediaQuery.of(context).size.width / 10)),
                     child: GridView.count(
                       crossAxisCount: 3,
                       childAspectRatio: 1.4,
@@ -70,17 +107,22 @@ class _MyHomePageState extends State<MyHomePage> {
                       crossAxisSpacing: MediaQuery.of(context).size.width / 40,
                       shrinkWrap: true,
                       children: [
-                        ImageButton('images/bude.png', 'A picture of a wheel'),
-                        ImageButton(
-                            'images/stagnes.png', 'A picture of a wheel'),
-                        ImageButton(
-                            'images/kerdroya.png', 'A picture of a wheel'),
-                        ImageButton(
-                            'images/scilly.png', 'A picture of a wheel'),
-                        ImageButton('images/cr2.png', 'A picture of a wheel'),
-                        ImageButton('images/i.jpg', 'A picture of a wheel'),
-                        ImageButton('images/cr.png', 'A picture of a wheel'),
-                        ImageButton('images/ig.jpg', 'A picture of a wheel'),
+                        ImageButton('images/bude2.png', 'A picture of a wheel',
+                            '/bude'),
+                        ImageButton('images/stagnes.png',
+                            'A picture of a wheel', '/stagnes'),
+                        ImageButton('images/kerdroya.png',
+                            'A picture of a wheel', '/kerdroya'),
+                        ImageButton('images/scilly.png', 'A picture of a wheel',
+                            '/scilly'),
+                        ImageButton('images/cr2.png', 'A picture of a wheel',
+                            '/corbynrun2'),
+                        ImageButton('images/i.jpg', 'A picture of a wheel',
+                            '/innovate'),
+                        ImageButton('images/cr.png', 'A picture of a wheel',
+                            '/corbynrun'),
+                        ImageButton('images/ig.jpg', 'A picture of a wheel',
+                            '/invisiblegarden'),
                       ],
                     ))
               ],
