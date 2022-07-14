@@ -1,130 +1,237 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Responsive Image Grid with Hover Example</title>
-    <meta name="author" content="Codeconvey" />
-    
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!--Only for demo purpose - no need to add.-->
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-	
+<style>
+  
+.header1 {
+  text-align: center;
+
+  color: black;
+  font-size: 60px;
+}
+.header2 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}
+.grid {
+background-color: lightblue;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }@media (max-width: 700px) {
+  .grid {
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+.grid-item {
+  background-color: lightcoral;
+  width: 25vw;
+  object-fit:scale-down;
+  height:100%;
+
+}@media (max-width: 700px) {
+  .grid-item {
+    width: 75vw;
+  }
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 100%;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000a2;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.name{
+ background-color: lawngreen;
+ text-align: center;
+}
+
+.link{
+  text-decoration: none;
+}
+
+
+</style>
+
 </head>
 <body>
-		
-<div class="ScriptTop">
-    <div class="rt-container">
-        <div class="col-rt-4" id="float-right">
-            <!-- AD -->
+<h1 class="header1">Tim Phillips</h1>
+<h2 class="header2">Game and experience design</h2>
+
+<div class = "grid">
+  <div class="container">
+    <div>
+      <a href = "Page2.html" class="link">
+        <img class = "grid-item" src="assets/cr2.png" alt="CorbynRun 2" class="image">
+        <div class = "name" >CorbynRun 2</div>
+        <div class="overlay">
+          <div class="text">CorbynRun 2</div>
         </div>
-        <div class="col-rt-2">
-            <ul>
-                <li><a href="https://codeconvey.com/responsive-image-grid-with-hover-effects">Back to Tutorial</a></li>
-            </ul>
-        </div>
+      </a>
     </div>
+  </div>
+  
+  
+  <div class="container">
+    <div>
+      <a href = "Page2.html" class="link">
+        <img class = "grid-item" src="assets/ig.jpg" alt="Invisible Garden" class="image">
+        <div class = "name" >Invisible Garden</div>
+        <div class="overlay">
+          <div class="text">Invisible Garden</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <a href = "Page2.html" class="link">
+        <img class = "grid-item" src="assets/cr2.png" alt="Avatar" class="image">
+        <div class = "name" >CorbynRun 2</div>
+        <div class="overlay">
+          <div class="text">CorbynRun 2</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <a href = "Page2.html" class="link">
+        <img class = "grid-item" src="assets/cr2.png" alt="Avatar" class="image">
+        <div class = "name" >CorbynRun 2</div>
+        <div class="overlay">
+          <div class="text">CorbynRun 2</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <a href = "Page2.html" class="link">
+        <img class = "grid-item" src="assets/cr2.png" alt="Avatar" class="image">
+        <div class = "name" >CorbynRun 2</div>
+        <div class="overlay">
+          <div class="text">CorbynRun 2</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <a href = "Page2.html" class="link">
+        <img class = "grid-item" src="assets/cr2.png" alt="Avatar" class="image">
+        <div class = "name" >CorbynRun 2</div>
+        <div class="overlay">
+          <div class="text">CorbynRun 2</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <a href = "Page2.html">
+        <img class = "grid-item" src="assets/cr2.png" alt="Avatar" class="image">
+        <div class = "name">Image title</div>
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <a href = "Page2.html">
+        <img class = "grid-item" src="assets/cr2.png" alt="Avatar" class="image">
+        <div class = "name">Image title</div>
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  
+
+
+
+
+
+
+
+
+
+    
+  
+  <div class="container">
+    <a href = "Page1.html">
+      <img class = "grid-item" src="assets/ig.jpg" alt="Avatar" class="image">
+      <div class = "name">Image title</div>
+      <div class="overlay">
+        <div class="text">Hello World
+       </div>
+      </div>
+    </a>
+  </div>
+  <div class="container">
+    <a href = "Page1.html">
+      <img class = "grid-item" src="assets/cr.png" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Hello World
+       </div>
+      </div>
+    </a>
+  </div>
+  <div class="container">
+    <a href = "Page1.html">
+      <img class = "grid-item" src="assets/os.png" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="text">Hello World
+       </div>
+      </div>
+    </a>
+  </div>
+  
+
 </div>
 
-<header class="ScriptHeader">
-    <div class="rt-container">
-    	<div class="col-rt-12">
-        	<div class="rt-heading">
-            	<h1>Responsive Image Grid with Hover Example</h1>
-                <p>A responsive image grid layout with hover overlay effect.</p>
-            </div>
-        </div>
-    </div>
-</header>
 
-<section>
-    <div class="rt-container">
-          <div class="col-rt-12">
-              <div class="Scriptcontent">
-              
-<!-- partial:index.partial.html -->
-<link href="https://fonts.googleapis.com/css?family=Poppins:700|Raleway" rel="stylesheet">
-
-
-<!-- Image row 1 -->
-    <div class="row">
-  <div class="column">
-    <a href="#">
-      <div class="container">
-        <img src="img/image-1.jpg" class="image">
-        <div class="overlay">
-          <div class="text">Example 1</div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="column">
-    <a href="#">
-      <div class="container">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" class="image">
-        <div class="overlay">
-          <div class="text">Example 2</div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="column">
-    <a href="#">
-      <div class="container">
-        <img src="img/image-3.png" class="image">
-        <div class="overlay">
-          <div class="text">Example 3</div>
-        </div>
-      </div>
-    </a>
-  </div>
-    </div>
-    <!-- Image row 2 -->
-    <div class="row">
-      <div class="column">
-    <a href="#">
-      <div class="container">
-        <img src="img/image-4.jpg" class="image">
-        <div class="overlay">
-          <div class="text">Example 4</div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="column">
-    <a href="#">
-      <div class="container">
-        <img src="img/image-5.jpg" class="image">
-        <div class="overlay">
-          <div class="text">Example 5</div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="column">
-    <a href="#">
-      <div class="container">
-        <img src="img/image-6.jpg" class="image">
-        <div class="overlay">
-          <div class="text">Example 6</div>
-        </div>
-      </div>
-    </a>
-  </div>
-</div>
-<!-- partial -->
-           
-    		</div>
-		</div>
-    </div>
-</section>
-     
-
-<!-- Analytics -->
-
-	</body>
+</body>
 </html>
