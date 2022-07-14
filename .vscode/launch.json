@@ -9,7 +9,7 @@
             "name": "flutter_website",
             "request": "launch",
             "type": "dart",
-            "program": "lib/pages/main.dart"
+            "program": "lib/main.dart"
         },
         {
             "name": "flutter_website (profile mode)",
