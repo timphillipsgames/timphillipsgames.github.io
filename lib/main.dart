@@ -1,8 +1,8 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
-import '../widgets/imageButton.dart';
-import '../widgets/imageButton2.dart';
+import 'widgets/imageButton.dart';
+import 'widgets/imageButton2.dart';
 
 void main() {
   runApp(const MyApp());
