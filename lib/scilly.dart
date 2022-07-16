@@ -29,9 +29,12 @@ class Scilly extends StatelessWidget {
         ),
         Container(
           margin: EdgeInsets.only(
-              top: 0, bottom: 40, left: MediaQuery.of(context).size.width / 5),
+              top: 0,
+              bottom: 40,
+              left: MediaQuery.of(context).size.width / 5,
+              right: MediaQuery.of(context).size.width / 5),
           child: Text(
-              "Captaining the Ceres was a VR installation created for Bude museum as part of the wAVE project. ",
+              "The Isles of Scilly Museum Walking Companion is a mobile app created by my teams and I as part of the wAVE project I alongside the staff at the Scilly Museum. The app allows visitors to the Isles of Scilly to select historical topics of interest and then receive phone alerts when they are physically near to relevant historical sites. I was responsible for project management, co-design, and programming. The app was made in flutter and is available for both iOS and Android.\n\nThe app delivers bespoke media content written by the museum staff. The staff can update the app and drop new ‘pins’ around the islands via a web interface that we also created.",
               style: TextStyle(fontSize: 18)),
         ),
 

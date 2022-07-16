@@ -22,16 +22,22 @@ class Corbynrun extends StatelessWidget {
             )),
         Container(
           margin: EdgeInsets.only(
-              top: 40, bottom: 40, left: MediaQuery.of(context).size.width / 5),
+              top: 40,
+              bottom: 40,
+              left: MediaQuery.of(context).size.width / 5,
+              right: MediaQuery.of(context).size.width / 5),
           child: Text('CorbynRun',
               style: TextStyle(fontFamily: 'Roboto', fontSize: 40)),
           //alignment: Alignment.center,
         ),
         Container(
           margin: EdgeInsets.only(
-              top: 0, bottom: 40, left: MediaQuery.of(context).size.width / 5),
+              top: 0,
+              bottom: 40,
+              left: MediaQuery.of(context).size.width / 5,
+              right: MediaQuery.of(context).size.width / 5),
           child: Text(
-              "Captaining the Ceres was a VR installation created for Bude museum as part of the wAVE project. ",
+              "CorbynRun was a propaganda game created for the Labour Party by a team of designers and developers operating as Games For The Many. The game was created for the UK 2017 general election and saw the players play as Jeremy Corbyn as he pursued caricatures of the then Conservative party, gaining followers and momentum and unlocking Labour party manifesto pledges.",
               style: TextStyle(fontSize: 18)),
         ),
 

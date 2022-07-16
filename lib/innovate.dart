@@ -22,16 +22,22 @@ class Innovate extends StatelessWidget {
             )),
         Container(
           margin: EdgeInsets.only(
-              top: 40, bottom: 40, left: MediaQuery.of(context).size.width / 5),
+              top: 40,
+              bottom: 40,
+              left: MediaQuery.of(context).size.width / 5,
+              right: MediaQuery.of(context).size.width / 5),
           child: Text('Innovate!',
               style: TextStyle(fontFamily: 'Roboto', fontSize: 40)),
           //alignment: Alignment.center,
         ),
         Container(
           margin: EdgeInsets.only(
-              top: 0, bottom: 40, left: MediaQuery.of(context).size.width / 5),
+              top: 0,
+              bottom: 40,
+              left: MediaQuery.of(context).size.width / 5,
+              right: MediaQuery.of(context).size.width / 5),
           child: Text(
-              "Captaining the Ceres was a VR installation created for Bude museum as part of the wAVE project. ",
+              "Innovate! was a boardgame commissioned by NESTA and designed my myself as part of Games For the Many. The object of the game was to educate innovation policy makers by simulating the environment of innovation policy. Players each represented a different stakeholder group and had to work together to tackle a large scale problem that required input from multiple industries to find a solution.",
               style: TextStyle(fontSize: 18)),
         ),
 

@@ -34,17 +34,7 @@ class Stagnes extends StatelessWidget {
               left: MediaQuery.of(context).size.width / 5,
               right: MediaQuery.of(context).size.width / 5),
           child: Text(
-              "The beach at Trevaunance Cove in Cornwall has been carpeted with bricks for over 100 years since its once bustling harbour collapsed. The StAgnes Museum VR Experience saw my team and I recreating for visitors to the StAgnes museum, the experince of sitting on the harbour wall circa 1900.",
-              style: TextStyle(fontSize: 18)),
-        ),
-        Container(
-          margin: EdgeInsets.only(
-              top: 0,
-              bottom: 40,
-              left: MediaQuery.of(context).size.width / 5,
-              right: MediaQuery.of(context).size.width / 5),
-          child: Text(
-              "The experience was co-designed by myself and the staff at the museum, devloped in Unreal 4 and deployed on the Vive Pro.",
+              "The beach at Trevaunance Cove in Cornwall has been carpeted with bricks for over 100 years since its once bustling harbour collapsed. The StAgnes Museum VR Experience saw my team and I recreating for visitors to the StAgnes museum the experience of sitting on the harbour wall circa 1900. I was responsible for project management, co-design with the museum staff, and programming. The project was built in Unreal and deployed on the Vive Pro.",
               style: TextStyle(fontSize: 18)),
         ),
 

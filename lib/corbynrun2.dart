@@ -22,16 +22,22 @@ class Corbynrun2 extends StatelessWidget {
             )),
         Container(
           margin: EdgeInsets.only(
-              top: 40, bottom: 40, left: MediaQuery.of(context).size.width / 5),
+              top: 40,
+              bottom: 40,
+              left: MediaQuery.of(context).size.width / 5,
+              right: MediaQuery.of(context).size.width / 5),
           child: Text('CorbynRun 2',
               style: TextStyle(fontFamily: 'Roboto', fontSize: 40)),
           //alignment: Alignment.center,
         ),
         Container(
           margin: EdgeInsets.only(
-              top: 0, bottom: 40, left: MediaQuery.of(context).size.width / 5),
+              top: 0,
+              bottom: 40,
+              left: MediaQuery.of(context).size.width / 5,
+              right: MediaQuery.of(context).size.width / 5),
           child: Text(
-              "Captaining the Ceres was a VR installation created for Bude museum as part of the wAVE project. ",
+              "CorbynRun 2 was created for the UK 2019 general election for the Labour Party. This version featured new and updated boss characters that reflected the political landscape of the time. I was the sole designer and developer for the project and worked with a small group of remote artists. ",
               style: TextStyle(fontSize: 18)),
         ),
 

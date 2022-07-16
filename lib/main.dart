@@ -84,11 +84,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     ])),
                 Container(
                     margin: EdgeInsets.only(
-                        top: 160,
-                        bottom: 140,
+                        top: 250,
+                        bottom: 220,
                         left: MediaQuery.of(context).size.width / 10),
                     child: Text(
-                      "Hi there, I'm Tim Phillips. I'm a lecturer at Falmouth University ",
+                      "Hi there, I'm a game designer, lecturer, and researcher at Falmouth University. \nFeel free to take a look at some of my projects.",
                       style: TextStyle(
                           fontFamily: 'Raleway',
                           fontSize: 25,
@@ -124,7 +124,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         ImageButton('images/ig.jpg', 'A picture of a wheel',
                             '/invisiblegarden'),
                       ],
-                    ))
+                    )),
+                Container(
+                  height: 250,
+                  //color: Colors.red,
+                )
               ],
             ))
 
