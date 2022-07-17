@@ -37,7 +37,7 @@ class Invisiblegarden extends StatelessWidget {
               left: MediaQuery.of(context).size.width / 5,
               right: MediaQuery.of(context).size.width / 5),
           child: Text(
-              "Captaining the Ceres was a VR installation created for Bude museum as part of the wAVE project. ",
+              "Created for the London Games Festival's Now Play This 2017;  Invisible Garden was an immersive, audio-only, geolocation experience that transformed Somerset House’s courtyard into a romantic, rural soundscape.\n\nI was co-designer and developer for the project that ultimately received mention in the Guardian's coverage of the event.",
               style: TextStyle(fontSize: 18)),
         ),
 

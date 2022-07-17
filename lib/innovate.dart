@@ -37,7 +37,7 @@ class Innovate extends StatelessWidget {
               left: MediaQuery.of(context).size.width / 5,
               right: MediaQuery.of(context).size.width / 5),
           child: Text(
-              "Innovate! was a boardgame commissioned by NESTA and designed my myself as part of Games For the Many. The object of the game was to educate innovation policy makers by simulating the environment of innovation policy. Players each represented a different stakeholder group and had to work together to tackle a large scale problem that required input from multiple industries to find a solution.",
+              "Innovate! is a boardgame commissioned by NESTA, the UK's innovation foundation, that explores innovation policy process. Aimed at an audience of innovation policy makers, players must communicate, collaborate, and share resources in order to tackle a large scale issue such as air quality or data ethics.\n\nI was the lead designer on the project and worked closely with NESTA throughout the games development which was heavily informed by NESTA's own models and understanding of innovation policy process.",
               style: TextStyle(fontSize: 18)),
         ),
 
